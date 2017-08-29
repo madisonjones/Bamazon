@@ -1,0 +1,50 @@
+CREATE DATABASE bamazon;
+
+USE bamazon;
+drop table products;
+-- Then create a Table inside of that database called products. 
+CREATE TABLE products(
+
+-- The products table should have each of the following 
+
+-- columns: item_id (unique id for each product) product_name 
+		ItemID INTEGER NOT NULL,
+-- (Name of product) department_name price (cost to customer) 
+		productName VARCHAR(100),
+-- stock_quantity (how much of the product is available in stores)
+		Price INTEGER NOT NULL,
+        StockQuantity INTEGER NOT NUll,
+        DepartmentName VARCHAR(100)
+        
+
+);
+
+INSERT INTO products(itemID, productName, price, StockQuantity, DepartmentName)
+VALUES(01, "Lucky Brand Jeans", 347, 25, "Apparel");
+
+INSERT INTO products(itemID, productName, price, StockQuantity, DepartmentName)
+VALUES(02, "Lucky Brand Heels", 89, 8, "Apparel");
+
+INSERT INTO products(itemID, productName, price, StockQuantity, DepartmentName)
+VALUES(03, "Gaba Neurotransmitter", 780, 13, "tech");
+
+INSERT INTO products(itemID, productName, price, StockQuantity, DepartmentName)
+VALUES(04, "Morrocon Floor Pillows", 63, 34, "home");
+
+INSERT INTO products(itemID, productName, price, StockQuantity, DepartmentName)
+VALUES(05, "Raspberry Pi3 + Kit", 123, 12, "tech");
+
+INSERT INTO products(itemID, productName, price, StockQuantity, DepartmentName)
+VALUES(06, "Wireless Apple Mac Keyboard", 18, 34, "tech");
+
+INSERT INTO products(itemID, productName, price, StockQuantity, DepartmentName)
+VALUES(07, "Bob Marley and the Wailers Album", 210, 3, "music");
+
+INSERT INTO products(itemID, productName, price, StockQuantity, DepartmentName)
+VALUES(08, "Ancient Civilization Technologies Book", 14, 8, "books");
+
+INSERT INTO products(itemID, productName, price, StockQuantity, DepartmentName)
+VALUES(09, "Solar Patio String Lights in a Jar", 3, 18, "home");
+
+INSERT INTO products(itemID, productName, price, StockQuantity, DepartmentName)
+VALUES(10, "Meditation Rug", 32, 12, "home");
